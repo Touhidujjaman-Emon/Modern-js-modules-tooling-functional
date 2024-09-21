@@ -3,6 +3,7 @@
 ## Modules
 
 - In programming, a module is a self-contained piece of code that represents a single unit of functionality
+- A **live connection** allows you to update a module's content while it's being used, without reloading the application.
 
 ![Modules](module.png)
 
