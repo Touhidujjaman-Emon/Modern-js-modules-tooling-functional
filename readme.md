@@ -4,7 +4,7 @@
 
 - In programming, a module is a self-contained piece of code that represents a single unit of functionality
 
-![Modules](Screenshot_63.png)
+![Modules](module.png)
 
 ## ES6 Modules vs Script
 
@@ -12,7 +12,7 @@
 
 ## How Es6 module are Imported
 
-![How Es6 module are Imported](<How Es6 module ar imported.png>)
+![How Es6 module are Imported](imported-es6-m.png)
 
 ## Namespace in JS Module
 
