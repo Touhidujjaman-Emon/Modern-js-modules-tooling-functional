@@ -8,4 +8,29 @@ import * as ShoppingCart from './shopingCart.js'
 // ShoppingCart.addToCart('bread', 5)
 
 import add from './shopingCart.js'
-add('egg',5)
+add('egg', 5)
+
+// Top level await
+console.log("START")
+const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+const data = await res.json();
+console.log(data);
+console.log("END")
+
+
+// Real world use
+const getPost = async function(p) {
+    const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+    const data = await res.json();
+
+    return {title : data.at(-1).title , text: data.at(-1).body}
+}
+
+const lastPost = getPost();
+
+// Not very clean
+// const lastPost2 = lastPost.then(post => console.log(post))
+
+// The clean way: Top level await
+const lastPost2 = await lastPost;
+console.log(lastPost2);
