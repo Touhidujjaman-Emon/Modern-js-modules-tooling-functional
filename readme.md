@@ -50,6 +50,7 @@ export default function (product, quantity) {
   console.log(`${product},${quantity} added to cart`);
 }
 ```
+
 - We should not use named and default value together. It creates complexity.
 
 ### Importing
@@ -76,6 +77,50 @@ ShoppingCart.addToCart('bread', 5);
 import add from './shopingCart.js';
 add('egg', 5);
 ```
+
+## Top level await
+
+[note]: **Use 3G in network mode**
+
+- After ES2022 we can use await in module **without async function** and that is called top level await.
+- We can not use top level await in normal **script** . It has to be module.
+- Example:
+
+```js
+console.log('START');
+const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+const data = await res.json();
+console.log(data);
+console.log('END');
+```
+
+- Here you can see that we can use await without async function
+- We have to be **cautious** because top level await has **code blocking behavior**. If we use the example we can see that first console will be **START** second **Data** and third **END**. It proves that top level await is code blocking.
+- If we import a **module which has top level await** we will face a problem.It will **block** the execution of code after it . And it will execute the next code after finishing execution of top level await.
+- Example:
+
+```js
+`Module1 / Export / blocking code`;
+
+console.log('Start fetching users');
+await fetch('https://jsonplaceholder.typicode.com/users');
+console.log('Finish fetching users');
+
+`Module2 / Import`;
+
+import add from './shopingCart.js';
+add('egg', 5);
+
+console.log('START');
+const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+const data = await res.json();
+// console.log(data);
+console.log('END');
+```
+
+- Look at the console
+  ![Mdule block](top-level-await.png)
+- You will see that after finishing the execution of blocking code it will execute the code in **module1**
 
 **_For more NOTES visit my github [https://github.com/Touhidujjaman-Emon]_**
 
