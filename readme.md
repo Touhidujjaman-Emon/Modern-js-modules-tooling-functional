@@ -122,6 +122,26 @@ console.log('END');
   ![Mdule block](top-level-await.png)
 - You will see that after finishing the execution of blocking code it will execute the code in **module1**
 
+### Real world use of top level await
+
+```js
+const getPost = async function (p) {
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+  const data = await res.json();
+
+  return { title: data.at(-1).title, text: data.at(-1).body };
+};
+
+const lastPost = getPost();
+
+// Not very clean
+// const lastPost2 = lastPost.then(post => console.log(post))
+
+// The clean way: Top level await
+const lastPost2 = await lastPost;
+console.log(lastPost2);
+```
+
 **_For more NOTES visit my github [https://github.com/Touhidujjaman-Emon]_**
 
 <!--
