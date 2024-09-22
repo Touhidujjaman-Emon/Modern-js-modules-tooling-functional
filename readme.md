@@ -11,6 +11,16 @@
 
 ![ES6modules](ES6modules.png)
 
+### One file per module
+
+- In JavaScript, "one module per file" means:
+
+1. Each file has its own separate code
+2. Each file exports one main thing (like a function or class)
+3. Other files can import and use that thing
+
+- It helps keep code organized and easy to use.
+
 ## How Es6 module are Imported
 
 ![How Es6 module are Imported](imported-es6-m.png)
@@ -100,13 +110,13 @@ console.log('END');
 - Example:
 
 ```js
-`Module1 / Export / blocking code`;
+// Module1 / Export / blocking code
 
 console.log('Start fetching users');
 await fetch('https://jsonplaceholder.typicode.com/users');
 console.log('Finish fetching users');
 
-`Module2 / Import`;
+// Module2 / Import
 
 import add from './shopingCart.js';
 add('egg', 5);
@@ -140,6 +150,45 @@ const lastPost = getPost();
 // The clean way: Top level await
 const lastPost2 = await lastPost;
 console.log(lastPost2);
+```
+
+## The module pattern (before es6 modules)
+
+- We have to create different scripts and link them in order in HTML
+- And we can't use a module bundler by default, but we can use tools like RequireJS or other module loaders to help manage dependencies.
+
+```js
+// The Module Pattern
+
+const ShoppingCart2 = (function () {
+  const cart = [];
+  const shippingCost = 10;
+  const totalPrice = 237;
+  const totalQuantity = 23;
+
+  const addToCart = function (product, quantity) {
+    cart.push({ product, quantity });
+    console.log(
+      `${quantity} ${product} added to cart (sipping cost is ${shippingCost})`
+    );
+  };
+
+  const orderStock = function (product, quantity) {
+    console.log(`${quantity} ${product} ordered from supplier`);
+  };
+
+  return {
+    addToCart,
+    cart,
+    totalPrice,
+    totalQuantity,
+  };
+})();
+
+ShoppingCart2.addToCart('apple', 4);
+ShoppingCart2.addToCart('pizza', 2);
+console.log(ShoppingCart2);
+console.log(ShoppingCart2.shippingCost);
 ```
 
 **_For more NOTES visit my github [https://github.com/Touhidujjaman-Emon]_**
