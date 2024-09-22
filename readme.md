@@ -129,7 +129,7 @@ console.log('END');
 ```
 
 - Look at the console
-  ![Mdule block](top-level-await.png)
+  ![Module block](top-level-await.png)
 - You will see that after finishing the execution of blocking code it will execute the code in **module1**
 
 ### Real world use of top level await
@@ -192,8 +192,8 @@ console.log(ShoppingCart2.shippingCost);
 ```
 
 ## CommonJS Modules
-- Important for node js and run on node js
-- Almost all npm respiratory use CommonJs module
+- Important for node js and are used by default in Node.js environments.
+- Almost all npm repository use CommonJs module
 ```js
 // Export
 export.addTocart = function (product, quantity) {
