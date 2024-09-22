@@ -191,6 +191,23 @@ console.log(ShoppingCart2);
 console.log(ShoppingCart2.shippingCost);
 ```
 
+## CommonJS Modules
+- Important for node js and run on node js
+- Almost all npm respiratory use CommonJs module
+```js
+// Export
+export.addTocart = function (product, quantity) {
+  cart.push({ product, quantity });
+  console.log(
+    `${quantity} ${product} added to cart (sipping cost is ${shippingCost})`
+  );
+};
+
+// Import
+const { addTocart } = require('./shoppingCart.js');
+
+```
+
 **_For more NOTES visit my github [https://github.com/Touhidujjaman-Emon]_**
 
 <!--
