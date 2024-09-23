@@ -1,3 +1,5 @@
+
+/*
 //Importing module
 // import {addToCart , totalPrice as price ,tq} from './shopingCart.js'
 // console.log('Importing module');
@@ -34,3 +36,4 @@ const lastPost = getPost();
 // The clean way: Top level await
 const lastPost2 = await lastPost;
 console.log(lastPost2);
+*/

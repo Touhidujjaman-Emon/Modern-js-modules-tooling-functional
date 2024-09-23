@@ -207,6 +207,47 @@ export.addTocart = function (product, quantity) {
 const { addTocart } = require('./shoppingCart.js');
 
 ```
+## Basic CommandLine
+
+**Navigation**
+
+* `Get-ChildItem` (or `gci` or `dir` or `ls`): Displays a list of files and folders in the current directory.
+* `Set-Location` (or `cd` or `chdir`): Changes the current directory.
+	+ Example: `cd Documents` (moves to the Documents folder)
+	+ Example: `cd ..` (moves to the parent directory)
+	+ Example: `cd ~` (moves to the user's home directory)
+* `cd` with up and down:
+	+ `cd ..` (moves up one directory level)
+	+ `cd ../../` (moves up two directory levels)
+	+ `cd ./` (stays in the current directory)
+	+ `cd ./subfolder` (moves down into the subfolder)
+
+**Creating and Deleting**
+
+* `New-Item` (or `ni`): Creates a new item (file or folder).
+	+ Example: `ni MyFolder` (creates a new folder named MyFolder)
+* `Remove-Item` (or `rm` or `del` or `erase`): Deletes a file or folder.
+	+ Example: `rm myfile.txt` (deletes the file myfile.txt)
+	+ Example: `rm MyFolder` (deletes the folder MyFolder)
+
+**Renaming and Editing**
+
+* `Rename-Item` (or `ren`): Renames a file or folder.
+	+ Example: `ren myfile.txt mynewfile.txt` (renames myfile.txt to mynewfile.txt)
+* `Invoke-Item` (or `ii`): Opens a file in the default editor.
+	+ Example: `ii myfile.txt` (opens myfile.txt in the default editor)
+
+**Note**: Some commands have aliases, which are shorter versions of the command. The following aliases are used in the examples above:
+	+ `gci`: `Get-ChildItem`
+	+ `cd`: `Set-Location`
+	+ `rm`: `Remove-Item`
+	+ `ren`: `Rename-Item`
+	+ `ii`: `Invoke-Item`
+	+ `dir`: `Get-ChildItem` (same as `gci`)
+	+ `ls`: `Get-ChildItem` (same as `gci`)
+	+ `chdir`: `Set-Location` (same as `cd`)
+	+ `del`: `Remove-Item` (same as `rm`)
+	+ `erase`: `Remove-Item` (same as `rm`)
 
 **_For more NOTES visit my github [https://github.com/Touhidujjaman-Emon]_**
 
