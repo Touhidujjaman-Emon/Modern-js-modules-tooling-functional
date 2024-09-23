@@ -216,7 +216,7 @@ const { addTocart } = require('./shoppingCart.js');
 	+ Example: `cd Documents` (moves to the Documents folder)
 	+ Example: `cd ..` (moves to the parent directory)
 	+ Example: `cd ~` (moves to the user's home directory)
-* `cd` with up and down:
+  * `cd` with up and down:
 	+ `cd ..` (moves up one directory level)
 	+ `cd ../../` (moves up two directory levels)
 	+ `cd ./` (stays in the current directory)
@@ -238,7 +238,7 @@ const { addTocart } = require('./shoppingCart.js');
 	+ Example: `ii myfile.txt` (opens myfile.txt in the default editor)
 
 **Note**: Some commands have aliases, which are shorter versions of the command. The following aliases are used in the examples above:
-	+ `gci`: `Get-ChildItem`
++ `gci`: `Get-ChildItem`
 	+ `cd`: `Set-Location`
 	+ `rm`: `Remove-Item`
 	+ `ren`: `Rename-Item`
