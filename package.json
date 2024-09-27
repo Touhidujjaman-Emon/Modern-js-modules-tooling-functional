@@ -1,0 +1,21 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "- In programming, a module is a self-contained piece of code that represents a single unit of functionality\r - A **live connection** allows you to update a module's content while it's being used, without reloading the application.",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Touhidujjaman Emon",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.38.1",
+    "leaflet": "^1.9.4",
+    "lodash-es": "^4.17.21",
+    "regenerator-runtime": "^0.14.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

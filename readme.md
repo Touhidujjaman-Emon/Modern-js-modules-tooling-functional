@@ -249,6 +249,10 @@ const { addTocart } = require('./shoppingCart.js');
 	+ `del`: `Remove-Item` (same as `rm`)
 	+ `erase`: `Remove-Item` (same as `rm`)
 
+  ## Modern and clean code
+  ![clean code](<modern and clean code1.png>)
+  ![clean code](<modern and clean code2.png>)
+
 **_For more NOTES visit my github [https://github.com/Touhidujjaman-Emon]_**
 
 <!--
