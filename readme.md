@@ -253,6 +253,11 @@ const { addTocart } = require('./shoppingCart.js');
   ![clean code](<modern and clean code1.png>)
   ![clean code](<modern and clean code2.png>)
 
+  ## Imperative VS Declarative code
+  ![paradigms](imperative_vs_declarative-code.png)
+  ### Functional programing princples
+  ![functional paradigms](functional_programing_principles.png)
+
 **_For more NOTES visit my github [https://github.com/Touhidujjaman-Emon]_**
 
 <!--
