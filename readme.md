@@ -1,25 +1,22 @@
 # Modules,Tooling and Functional
 
-# orange cat  aivave title/heading likhe
-## aiave sub heading
-### hello aiave aro heading lekha jai
+# A orange cat aiave heading/title likhe
+## aivave sub heading likhe
+### aiave hash diye ar headin lekha jai
 #### etc etc
 
-1. number aivave likhe
-2. number 2
+1. aiave number likhe
+2. hello
 
-- aiave dash dile doy hoiye jai.
-- hi ami dot
-- _sadia pocha_ aiave under dash dile italick hoi
-- **hi,sadia** aiave double star dile bold hoi
+- aiave dash dile dot hoiye jai
+- _sadia pocha_ aivave under dash dile italic hoiye jai
+- **hi,sadia** aiave double star diye bold kore likhe
 
-akon pic add korbo
+akon pic add kora sikhabo
 ![alt text](Screenshot_57.png)
-aiave pic add kore
-akon git a push kore dekbo readme kmn hoi . terminal open kore git push korbo
-terminal open korte ctrl + ` dibo
-
-
+aiave pic add kore.
+akon github a push korbo.tai terminal khulte hbe
+ctrl + ` diye terminal open kore
 
 
 ## Modules
