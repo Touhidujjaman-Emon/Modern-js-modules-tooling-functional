@@ -1,24 +1,5 @@
 # Modules,Tooling and Functional
 
-# A orange cat aiave heading/title likhe
-## aivave sub heading likhe
-### aiave hash diye ar headin lekha jai
-#### etc etc
-
-1. aiave number likhe
-2. hello
-
-- aiave dash dile dot hoiye jai
-- _sadia pocha_ aivave under dash dile italic hoiye jai
-- **hi,sadia** aiave double star diye bold kore likhe
-
-akon pic add kora sikhabo
-![alt text](Screenshot_57.png)
-aiave pic add kore.
-akon github a push korbo.tai terminal khulte hbe
-ctrl + ` diye terminal open kore
-
-
 ## Modules
 
 - In programming, a module is a self-contained piece of code that represents a single unit of functionality
