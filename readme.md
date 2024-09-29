@@ -1,23 +1,23 @@
 # Modules,Tooling and Functional
 
-# a orange cat aivave heading?title lekhe
-## sub heading 2 ta hash diye sub heading lekhe
-### lol
-#### lol2 etc aivave aro heading dewa jai
+# orange cat  aivave title/heading likhe
+## aiave sub heading
+### hello aiave aro heading lekha jai
+#### etc etc
 
-- i love black cat too. 
-- aivave das dile dot hoiye jai
-- _sadia pocha meye_ aiave double under dash likhle italic hoiye jai
-_hi sadia_
+1. number aivave likhe
+2. number 2
 
-1. aiave number likhe
-2. **bold** aivave bold kore likhe
+- aiave dash dile doy hoiye jai.
+- hi ami dot
+- _sadia pocha_ aiave under dash dile italick hoi
+- **hi,sadia** aiave double star dile bold hoi
 
 akon pic add korbo
-![alt text](Screenshot_33.png)
-
-akon aigula git hub a push kore save korbo and contribute barabo
-ctrl + ` dile terminal show kore.
+![alt text](Screenshot_57.png)
+aiave pic add kore
+akon git a push kore dekbo readme kmn hoi . terminal open kore git push korbo
+terminal open korte ctrl + ` dibo
 
 
 
