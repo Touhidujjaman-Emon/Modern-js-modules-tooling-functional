@@ -207,6 +207,45 @@ export.addTocart = function (product, quantity) {
 const { addTocart } = require('./shoppingCart.js');
 
 ```
+## Parcel
+
+Parcel is a fast, zero-configuration web application bundler. It allows you to bundle your code and its dependencies into a single file, making it easy to deploy and run your application.
+
+**Key Features:**
+* parcel use balbel under the hood to transpile code.
+* Zero-configuration: No need to configure anything, just run `parcel` and it will bundle your code.
+* Fast: Parcel is designed to be fast, with a focus on performance and speed.
+* Automatic code splitting: Parcel automatically splits your code into smaller chunks, making it easier to load and cache.
+* Support for multiple file types: Parcel supports JavaScript, CSS, HTML, and more.
+
+### Usage:
+- We have to install parcel as dev-dependencies (npm i parcel -D)
+- we have to install core-js (npm i core-js) so that our code can run on older browser
+  ```js
+  import 'core-js/stable';
+  ```
+- we have to install regenerator-runtime (npm i regenerator-runtime) to ensure that async/await support on all browser
+```js
+import 'regenerator-runtime/runtime';
+```
+- we have to customize our package.json file
+```js
+ "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  }
+```
+**npm start**
+- Build your code in development mode
+- Start a development server that watches for changes to your code
+- Automatically reload the browser when changes are detected
+
+**npm run build**
+- Build your code in production mode
+- Optimize the output for production (e.g., minify, compress)
+- Output the built code to a directory (e.g., dist)
+
+This command will bundle your `index.html` file and its dependencies into a single file, ready to be deployed.
 ## Basic CommandLine
 
 **Navigation**
@@ -265,3 +304,4 @@ const { addTocart } = require('./shoppingCart.js');
   Do not remove this notice.
   For more NOTES visit my github [https://github.com/Touhidujjaman-Emon]
 -->
+
